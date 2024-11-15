@@ -1,0 +1,16 @@
+// General settings
+
+{
+    "include": "~/.config/waybar/modules.jsonc",
+    // position
+    "layer": "top",
+    "position": "top",
+    "spacing": 3,
+    "margin-top": 5,
+    "margin-right": 8,
+    "margin-left": 8,
+    "modules-left": ["custom/separator#blank", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["group/sys_drawer", "custom/separator#line", "pulseaudio", "backlight", "custom/separator#line", "clock", "custom/separator#line", "battery"],
+}
+
