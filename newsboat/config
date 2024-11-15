@@ -1,0 +1,53 @@
+auto-reload yes
+#keybinds
+bind-key j down
+bind-key k up
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+#bind-key n next-unread
+#bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+bind-key BACKSPACE hard-quit
+bind-key q hard-quit
+bind-key m toggle-article-read
+
+unbind-key n
+
+#colors
+#color <element> <foregroundcolor> <bgcolor> <attribute>
+color title color232 color215 bold
+color listnormal color245 default
+color listfocus black color215 standout bold #leave be
+color listnormal_unread green default
+color listfocus_unread color215 default bold #leave be
+color info color232 red bold
+color article color15 default bold #white on terminal
+
+highlight all "---.*---" yellow
+highlight feedlist ".*(0/0))" black
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
+highlight article "(^Link:.*|^Date:.*)" color184 default
+highlight article "https?://[^ ]+" green default
+highlight article "^(Title):.*$" blue default
+highlight article "\\[[0-9][0-9]*\\]" magenta default bold
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" color200 default
+highlight article ":.*\\(embedded flash\\)$" magenta default
+
+#browser for links
+macro , open-in-browser
+macro m set browser "devour mpv" ; open-in-browser
+macro l set browser "devour librewolf --new-tab" ; open-in-browser
+macro f set browser "devour feh" ; open-in-browser

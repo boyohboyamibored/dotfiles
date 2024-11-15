@@ -1,0 +1,197 @@
+{
+"hyprland/workspaces": {
+    "active-only": false,
+    "all-outputs": true,
+	"on-click": "activate",
+	"on-scroll-up": "hyprctl dispatch workspace e+1",
+	"on-scroll-down": "hyprctl dispatch workspace e-1",
+    "format": "{icon}",
+    "format-icons": {
+        "1": " ",
+        "2": "󰖟 ",
+        "3": "󰊠 ",
+        "4": "󰶈 ",
+        "5": "󰮯 ",
+        "6": " ",
+        "7": " ",
+        "default": " ",
+    },
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": [],
+        "6": [],
+        "7": [],
+    }
+},
+
+"hyprland/window": {
+	"format": "{}",
+	"max-length": 30,
+	"separate-outputs": true,
+	"offscreen-css": true,
+	"offscreen-css-text": "(inactive)",
+},
+
+"clock": {
+    "interval": 1,
+    "format": " {:%I:%M %p}",
+	"format-alt": " {:%I:%M:%S %p   %a, %d-%m-%y}",
+},
+
+"pulseaudio": {
+    "scroll-step": 5, // %, can be a float
+    "format": "{icon}{volume}",
+    "format-muted": " ",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": " {icon}",
+    "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": "",
+        "portable": "",
+        "car": "",
+        "default": [" ", " "]
+    },
+    "on-click": "pavucontrol"
+},
+
+"pulseaudio#microphone": {
+	"format": "{format_source}",
+	"format-source": " {volume}%",
+	"format-source-muted": " ",
+	"on-click-right": "pavucontrol -t 4",
+	"tooltip-format": "{source_desc} | {source_volume}%",
+	"scroll-step": 5,
+},
+
+"backlight": {
+        "scroll-step": 5,
+        // "device": "acpi_video1",
+        "format": "{icon} {percent}",
+        "format-icons": ["󰃞", "󰃟", "󰃝", "󰃠"]
+		//"format-icons": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+},
+
+"battery": {
+	"interval": 5,
+	"align": 0,
+	"rotate": 0,
+	"bat": "BAT1",
+	"adapter": "ACAD",
+	"full-at": 100,
+	"design-capacity": false,
+	"states": {
+		"good": 90,
+		"warning": 30,
+		"critical": 15,
+	},
+	"format": "{icon} {capacity}%",
+	"format-charging": " {capacity}%",
+	"format-plugged": "󱘖 {capacity}%",
+	"format-alt-click": "click",
+	"format-full": "{icon} Full",
+	"format-alt": "{icon} {time}",
+	"format-icons": [
+		"󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"
+	],
+	"format-time": "{H}h {M}min",
+	"tooltip": true,
+	"tooltip-format": "{timeTo} {power}w",
+},
+
+// Separators
+"custom/separator#dot": {
+	"format": "",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#dot-line": {
+	"format": "",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#line": {
+	"format": "|",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#blank": {
+	"format": " ",
+	"interval": "once",
+	"tooltip": false
+},
+"custom/separator#blank_2": {
+	"format": "  ",
+	"interval": "once",
+	"tooltip": false
+},
+
+"cpu": {
+	"format": "󰍛 {usage}%",
+	"interval": 1,
+	"min-length": 5,
+	"format-alt-click": "click",
+	"format-alt": "󰍛 {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
+	"format-icons": [
+		"▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"
+	],
+	"on-click-right": "kitty -e htop",
+},
+
+"memory": {
+	"interval": 10,
+	"format": " {percentage}%",
+	"format-alt-click": "click",
+	"tooltip": true,
+},
+
+"temperature": {
+	"interval": 10,
+	"tooltip": true,
+	"hwmon-path": [
+		"/sys/class/hwmon/hwmon1/temp1_input",
+		"/sys/class/thermal/thermal_zone0/temp"
+	],
+	//"thermal-zone": 0,
+	"critical-threshold": 70,
+	"format-critical": "{icon} {temperatureC}°C",
+	"format": "{icon} {temperatureC}°C",
+	"format-icons": [
+		"󰈸"
+	],
+},
+
+"group/sys_drawer": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "cpu",
+		"transition-left-to-right": true
+        },
+	"modules": [
+		"cpu",	
+        "custom/separator#blank_2",
+        "temperature",
+        "custom/separator#blank_2",
+		"memory",
+	]
+},
+
+
+"group/audio": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "pulseaudio",
+		"transition-left-to-right": true
+        },
+	"modules": [
+		"pulseaudio",
+		"pulseaudio#microphone",
+	]
+},
+}

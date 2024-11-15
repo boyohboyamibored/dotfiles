@@ -1,0 +1,18 @@
+[pyprland]
+plugins = ['scratchpads']
+
+[scratchpads.term]
+command = "kitty --class dropterm"
+class = "dropterm"
+animation = "fromTop"
+size = "55% 50%"
+
+[scratchpads.ncmp]
+command = "kitty --class ncmp -e ncmpcpp"
+class = "ncmp"
+animation = "fromTop"
+size = "55% 50%"
+margin = 50
+position = "45% 5%"
+unfocus = "hide" # hide when not focused
+lazy = true  # don't start on startup
