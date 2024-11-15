@@ -1,0 +1,34 @@
+##############
+####ALIASES###
+##############
+
+#Pacman 
+alias paclean="sudo pacman -Sc"
+alias pacrm="sudo pacman -Rns"
+alias pacrmorpans="sudo pacman -Rc $(pacman -Qtdq)"
+alias pacsync="sudo pacman -Syy"
+alias pacupg="sudo pacman -Syu"
+alias pacins="sudo pacman -S"
+
+#General aliases
+alias mv="mv -iv"
+alias cp="cp -vr"
+alias mkdir="mkdir -pv"
+alias rm="rm -vrI"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ls="ls -h --group-directories-first --color=auto"
+alias ll="ls -lh --group-directories-first --color=auto"
+
+#alias ls="eza -a --icons=always --group-directories-first"
+#alias ll="eza -al --icons=always --group-directories-first"
+#alias lt="eza -a --tree --level=1 --icons=always"
+#alias cat="bat"
+
+alias ytd="yt-dlp -c" #continue from where download stopped
+alias yz="yazi"
+alias v="nvim"
+alias ncmp="ncmpcpp -q"
+alias mpv="devour mpv"
+alias clamscan="clamscan -ir"
+alias mupdf="devour mupdf"

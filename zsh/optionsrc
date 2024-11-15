@@ -1,0 +1,15 @@
+setopt correct                    # Auto correct mistakes
+setopt extendedglob               # Extended globbing. Allows using regular expressions with *
+setopt nocaseglob                 # Case insensitive globbing
+#setopt nocheckjobs                # Don't warn about running processes when exiting
+setopt numericglobsort            # Sort filenames numerically when it makes sense
+#setopt nobeep                     # No beep
+setopt autocd                     # if only directory path is entered, cd there.
+
+#history
+setopt hist_ignore_dups     # do not record an event that was just recorded again
+setopt hist_ignore_all_dups # delete an old recorded event if a new event is a duplicate
+setopt hist_ignore_space    # do not record an event starting with a space
+setopt hist_save_no_dups    # do not write a duplicate event to the history file
+setopt inc_append_history   # write to the history file immediately, not when the shell exits
+setopt share_history        # share history between terminals
