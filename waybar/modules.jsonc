@@ -28,11 +28,17 @@
 },
 
 "hyprland/window": {
-	"format": "{}",
-	"max-length": 30,
+	"format": "{class}",
+	"max-length": 20,
 	"separate-outputs": true,
 	"offscreen-css": true,
 	"offscreen-css-text": "(inactive)",
+	"rewrite": {
+		//"(.*) — Mozilla Firefox": " $1",
+		//"(.*) - fish": "> [$1]",
+		//"(.*) - $term": "> [$1]",
+		//"(.*) - zsh": "> [$1]",
+	},
 },
 
 "clock": {
