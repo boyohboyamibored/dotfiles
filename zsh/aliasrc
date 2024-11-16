@@ -18,7 +18,7 @@ alias mkdir="mkdir -pv"
 alias rm="rm -vrI"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
-alias ls="ls -A --group-directories-first"
+alias ls="ls --group-directories-first"
 alias ll="ls -Ahl --group-directories-first"
 # alias lt="ls -A --tree --level=1"
 

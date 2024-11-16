@@ -1,27 +1,33 @@
+@import 'themes/mocha.css';
+
 /* vars */
 @define-color bg rgba(0, 0, 0, 0.2);
 @define-color active rgba(255, 120, 0, 1.0);
 @define-color used rgba(188, 200, 244, 1.0);
-@define-color text rgba(255, 255, 255, 1.0);
+/* @define-color text rgba(255, 255, 255, 1.0); */
 @define-color warning #f3f809;
 
 * {
     border: none;
     background: transparent;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     font-size: 16px;
 }
 
 window#waybar {
-    background: @bg;
+    background: @surface0;
     color: @text;
+}
+
+#window {
+    color: @yellow;
 }
 
 #workspaces button {
     /* active (not empty) workspace */
-    color: @used;
+    color: @teal;
     padding: 0 0.5em;
     border-top: 2px solid transparent;
 }
@@ -32,18 +38,32 @@ window#waybar {
 
 #workspaces button.active {
     /* current workspace */
-    color: @active;
+    color: @peach;
 }
 
-#cpu, #memory, #temparature, #battery, #backlight, #pulseaudio,
+#cpu, #memory, #mpd, #temparature, #battery, #backlight, #pulseaudio,
 #clock {
     padding: 1px 1px;
 }
-   
-@keyframes blink {
-	to {
-	color: #000000;
-	   }
+
+#mpd {
+    color: @red;
+}
+
+#clock {
+    color: @mauve;
+}
+
+#pulseaudio {
+    color: @lavender;
+}
+
+#backlight {
+    color: yellow;
+}
+
+#cpu, #memory, #temperature {
+    color: @sky;
 }
 
 #battery {
@@ -68,3 +88,9 @@ window#waybar {
 	animation-direction: alternate;
 }
 
+ 
+@keyframes blink {
+	to {
+	color: #000000;
+	   }
+}
