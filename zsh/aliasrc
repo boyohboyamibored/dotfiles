@@ -4,7 +4,8 @@
 
 #Pacman 
 alias paclean="sudo pacman -Sc"
-alias pacrm="sudo pacman -Rns"
+alias pacrm="sudo pacman -R"
+alias pacyeet="sudo pacman -Rcs"
 alias pacrmorpans="sudo pacman -Rc $(pacman -Qtdq)"
 alias pacsync="sudo pacman -Syy"
 alias pacupg="sudo pacman -Syu"
@@ -17,13 +18,10 @@ alias mkdir="mkdir -pv"
 alias rm="rm -vrI"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
-alias ls="ls -h --group-directories-first --color=auto"
-alias ll="ls -lh --group-directories-first --color=auto"
+alias ls="ls -A --group-directories-first"
+alias ll="ls -Ahl --group-directories-first"
+# alias lt="ls -A --tree --level=1"
 
-#alias ls="eza -a --icons=always --group-directories-first"
-#alias ll="eza -al --icons=always --group-directories-first"
-#alias lt="eza -a --tree --level=1 --icons=always"
-#alias cat="bat"
 
 alias ytd="yt-dlp -c" #continue from where download stopped
 alias yz="yazi"
