@@ -18,29 +18,24 @@ zmodload zsh/complist
 compinit
 ###################################
 
-#plugins
-#source ~/.config/plugins/powerlevel10k/powerlevel10k.zsh-theme
-#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
-#source ~/.config/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-#source ~/.config/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh
 
-#history search
-# bindkey '^[[A' history-substring-search-up
-# bindkey '^[[B' history-substring-search-down
-#
-# bindkey -M vicmd 'k' history-substring-search-up
-# bindkey -M vicmd 'j' history-substring-search-down
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
 
-#aliasrc
-[ -f ~/.config/zsh/aliasrc ] && source ~/.config/zsh/aliasrc
+# aliasrc
+[ -f $HOME/.config/zsh/aliasrc ] && source $HOME/.config/zsh/aliasrc
+# optionsrc
+[ -f $HOME/.config/zsh/optionsrc ] && source $HOME/.config/zsh/optionsrc
 
-# To customize prompt, run `p10k configure` or edit ~/.config/zsh//.p10k.zsh.
-#[[ ! -f ~/.config/zsh//.p10k.zsh ]] || source ~/.config/zsh//.p10k.zsh
 
 #fzf
 eval "$(fzf --zsh)"
 
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 #zoxide at END of file
 eval "$(zoxide init zsh)"
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh 2>/dev/null
