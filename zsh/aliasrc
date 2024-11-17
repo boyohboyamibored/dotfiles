@@ -12,6 +12,7 @@ alias pacupg="sudo pacman -Syu"
 alias pacins="sudo pacman -S"
 
 # General aliases
+alias cat="bat"
 alias mv="mv -iv"
 alias cp="cp -vr"
 alias mkdir="mkdir -pv"

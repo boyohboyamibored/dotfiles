@@ -17,6 +17,7 @@ These are my dotfiles for the following programs. My current distro is [Artix Li
 The dependencies are the programs listed above (although you don't need to install them). You'll also need the following programs because they're in my `zsh/aliasrc` file
 
 - eza
+- bat
 - yazi
 - yt-dlp
 - python-pyprland
