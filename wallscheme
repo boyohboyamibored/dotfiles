@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Choosing random wallpaper
+wallpaper=$(find $HOME/Pics/wallpapers -type f | shuf -n 1)
+
+# Setting up wallpaper...
+waypaper --wallpaper $wallpaper
+
+# Generating colorshemce...
+wal -i $wallpaper >/dev/null
+
