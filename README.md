@@ -20,3 +20,4 @@ The dependencies are the programs listed above (although you don't need to insta
 - yazi
 - devour
 - yt-dlp
+- python-pyprland
