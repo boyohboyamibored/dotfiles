@@ -5,6 +5,7 @@ setopt nocaseglob                 # Case insensitive globbing
 setopt numericglobsort            # Sort filenames numerically when it makes sense
 #setopt nobeep                     # No beep
 setopt autocd                     # if only directory path is entered, cd there.
+setopt interactive_comments
 
 #history
 setopt hist_ignore_dups     # do not record an event that was just recorded again

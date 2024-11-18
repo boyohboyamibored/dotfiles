@@ -23,3 +23,6 @@ The dependencies are the programs listed above (although you don't need to insta
 - python-pyprland
 - waypaper (with swaybg or wayland backend of choice)
 - move the `wallscheme` script to `$HOME/.local/bin/`
+
+> [!NOTE]
+> add `source ~/.config/zsh/.zshrc` to `$HOME/.zshrc`
