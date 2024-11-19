@@ -2,7 +2,7 @@
 
 These are my dotfiles for the following programs. My current distro is [Artix Linux](https://www.artixlinux.org)
 
-- ([Hyprland](https://www.hyprland.org)) Window Manager
+- [Hyprland](https://www.hyprland.org) (Window Manager)
 - waybar (status bar)
 - nvim (editor)
 - kitty (terminal)
