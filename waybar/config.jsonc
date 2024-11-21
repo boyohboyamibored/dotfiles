@@ -11,6 +11,6 @@
     "margin-left": 8,
     "modules-left": ["custom/separator#blank", "mpd", "custom/separator#line", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["group/sys_drawer", "custom/separator#line", "pulseaudio", "backlight", "custom/separator#line", "clock", "custom/separator#line", "battery", "custom/separator#blank"],
+    "modules-right": ["group/sys_drawer", "custom/separator#line", "pulseaudio", "backlight", "custom/separator#line", "clock", "custom/separator#line", "battery", "custom/separator#blank", "group/sys_tray", "custom/separator#blank"],
 }
 

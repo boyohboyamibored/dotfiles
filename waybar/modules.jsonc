@@ -77,7 +77,8 @@
   "network": {
     "interface": "wlan0",
     "format": "{ifname}",
-    "format-wifi": " {essid}@{signalStrength}%)",
+    "format-wifi": " ",
+    //"format-wifi": " {essid}@{signalStrength}%)",
     "format-ethernet": "{ipaddr}/{cidr} 󰊗",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
@@ -85,6 +86,20 @@
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
+  },
+
+  "bluetooth": {
+    // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+    "format": " {status}",
+    "format-disabled": "", // an empty format will hide the module
+    "format-connected": " {num_connections} connected",
+    "tooltip-format": "{controller_alias}\t{controller_address}",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+  },
+
+  "group/sys_tray": {
+    "modules": ["bluetooth", "network"],
   },
 
   "pulseaudio": {
