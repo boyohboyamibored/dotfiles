@@ -48,6 +48,6 @@ highlight article ":.*\\(embedded flash\\)$" magenta default
 
 #browser for links
 macro , open-in-browser
-macro m set browser "devour mpv" ; open-in-browser
-macro l set browser "devour librewolf --new-tab" ; open-in-browser
-macro f set browser "devour feh" ; open-in-browser
+macro m set browser "mpv" ; open-in-browser
+macro l set browser "librewolf --new-tab" ; open-in-browser
+macro f set browser "feh" ; open-in-browser
