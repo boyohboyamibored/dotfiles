@@ -34,18 +34,17 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 [ -f $HOME/.config/zsh/aliasrc ] && source $HOME/.config/zsh/aliasrc
 # optionsrc
 [ -f $HOME/.config/zsh/optionsrc ] && source $HOME/.config/zsh/optionsrc
+[ -f $HOME/.config/zsh/.zshenv ] && source $HOME/.config/zsh/.zshenv
 
 # plugins
 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh 2>/dev/null
 source /usr/share/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh 2>/dev/null
-[ -f $HOME/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme ] && source $HOME/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme 2>/dev/null
-[ -f $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh ] && source $HOME/.config/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh 2>/dev/null
+source $HOME/.config/zsh/plugins/powerlevel10k/powerlevel10k.zsh-theme 2>/dev/null
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
 #fzf
 eval "$(fzf --zsh)"

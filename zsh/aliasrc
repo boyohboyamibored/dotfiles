@@ -28,6 +28,5 @@ alias ytd="yt-dlp -c" #continue from where download stopped
 alias yz="yazi"
 alias v="nvim"
 alias ncmp="ncmpcpp -q"
-alias mpv="mpv"
 alias clamscan="clamscan -ir"
 alias mupdf="mupdf"
