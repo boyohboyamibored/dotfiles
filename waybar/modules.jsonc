@@ -8,7 +8,8 @@
     "format": "{icon}",
     "format-icons": {
       "1": " ",
-      "2": "󰖟 ",
+      "2": "web",
+      // icons 󰖟 , 󰶈 
       "3": "󰊠 ",
       "4": "󰶈 ",
       "5": "󰮯 ",
@@ -28,8 +29,8 @@
   },
 
   "hyprland/window": {
-    "format": "{class}",
-    "max-length": 20,
+    "format": "{title}",
+    "max-length": 30,
     "separate-outputs": true,
     "offscreen-css": true,
     "offscreen-css-text": "(inactive)",
@@ -48,10 +49,11 @@
   },
 
   "mpd": {
-    "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{title} - {artist} - {album}",
+    "format": "{stateIcon} {title} - {artist}",
     //"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
     "format-disconnected": "Disconnected ",
-    "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} ",
+    "format-stopped": "",
+    //"format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} ",
     "interval": 10,
     "max-length": 30,
     "consume-icons": {
@@ -67,8 +69,8 @@
       "on": "1 ",
     },
     "state-icons": {
-      "paused": "",
-      "playing": "",
+      "paused": " ",
+      "playing": " ",
     },
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)",
@@ -77,10 +79,10 @@
   "network": {
     "interface": "wlan0",
     "format": "{ifname}",
-    "format-wifi": " ",
+    "format-wifi": "",
     //"format-wifi": " {essid}@{signalStrength}%)",
     "format-ethernet": "{ipaddr}/{cidr} 󰊗",
-    "format-disconnected": "", //An empty format will hide the module.
+    "format-disconnected": " x", //An empty format will hide the module.
     "tooltip-format": "{ifname} via {gwaddr} 󰊗",
     "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
     "tooltip-format-ethernet": "{ifname} ",

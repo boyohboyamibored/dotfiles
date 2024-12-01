@@ -19,20 +19,25 @@ alias mkdir="mkdir -pv"
 alias rm="rm -vrI"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
-alias ls="eza --group-directories-first --color=always --icons=always"
-alias ll="eza -Ahl --group-directories-first --color=always --icons=always"
-alias lt="eza -A --tree --level=1 --color=always --icons=always"
+alias ls="eza --group-directories-first --icons=always"
+alias ll="eza -Ahl --group-directories-first --icons=always"
+alias lt="eza -A --tree --level=1 --icons=always"
 
 # git aliases
 alias ga="git add"
 alias gc="git commit"
 alias gca="git commit -a"
-alias gs="git status"
-alias gps="git push"
-alias gpl="git pull"
 alias gch="git checkout"
 alias gd="git diff"
+alias gs="git status"
+alias gpl="git pull"
+alias gpu="git push"
 
+# tmux aliases
+alias tn="tmux new -s"
+alias ta="tmux attach"
+alias tk="tmux kill-session -t"
+alias tl="tmux ls"
 
 alias ytd="yt-dlp -c" #continue from where download stopped
 alias yz="yazi"

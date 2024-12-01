@@ -10,12 +10,10 @@
   "margin-right": 8,
   "margin-left": 8,
   "modules-left": [
-    "custom/separator#blank",
     "mpd",
-    "custom/separator#line",
-    "hyprland/window",
+    "hyprland/workspaces"
   ],
-  "modules-center": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
   "modules-right": [
     "group/sys_drawer",
     "custom/separator#line",
@@ -25,8 +23,7 @@
     "clock",
     "custom/separator#line",
     "battery",
-    "custom/separator#blank",
     "network",
-    "custom/separator#blank",
-  ],
+    "custom/separator#blank"
+  ]
 }
