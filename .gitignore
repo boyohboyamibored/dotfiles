@@ -1,2 +1,3 @@
-zsh/.zcompdump
-mpd/database
+.config/zsh/.zcompdump
+.config/mpd/database
+*.log

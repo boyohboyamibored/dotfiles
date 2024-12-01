@@ -5,5 +5,9 @@
 
 # setbg to what cursor is on
 prepend_keymap = [
-	{ on = "b", run = 'shell "wallscheme $0" --confirm', desc = "Just for test!" },
+	{ on = "b", run = 'shell "wallscheme $0" --confirm', desc = "Set wallpaper" },
+]
+
+append_keymap = [
+	{ on = ["g", "w"], run = 'cd ~/Pics/wallpapers', desc = "Go to wallpaper dir" },
 ]
