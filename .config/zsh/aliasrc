@@ -30,7 +30,7 @@ alias gca="git commit -a"
 alias gch="git checkout"
 alias gd="git diff"
 alias gst="git status"
-alias gb="git branch"
+alias gs="git switch"
 alias gpl="git pull"
 alias gpu="git push"
 
