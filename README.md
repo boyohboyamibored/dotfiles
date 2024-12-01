@@ -14,11 +14,9 @@ These are my dotfiles for the following programs. My current distro is [Artix Li
 
 ## Dependencies
 
-The dependencies are the programs listed above (although you don't need to install them). You'll also need the following programs because they're in my `zsh/aliasrc` file
+The dependencies are the programs listed above (although you don't need to install them). You'll also need the following programs because they're in my dotfiles
 
 - eza
 - bat
-- yazi
-- yt-dlp
-- python-pyprland
-- waypaper (with swaybg or wayland backend of choice)
+- python-pyprland for scratchpads
+- waypaper (with swaybg or wayland backend of choice) for wallpapers
