@@ -25,6 +25,7 @@ alias lt="eza -A --tree --level=1 --icons=always"
 
 # git aliases
 alias ga="git add"
+alias gb="git branch"
 alias gc="git commit"
 alias gca="git commit -a"
 alias gch="git checkout"
@@ -42,7 +43,7 @@ alias tl="tmux ls"
 
 alias ytd="yt-dlp -c" #continue from where download stopped
 alias yz="yazi"
-alias v="nvim"
+alias v=$EDITOR
 alias ncmp="ncmpcpp -q"
 alias clamscan="clamscan -ir"
 alias mupdf="mupdf"

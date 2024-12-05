@@ -6,6 +6,7 @@ command = "kitty --class dropterm"
 class = "dropterm"
 animation = "fromTop"
 size = "55% 50%"
+lazy = true
 
 [scratchpads.ncmp]
 command = "kitty --class ncmp -e ncmpcpp"

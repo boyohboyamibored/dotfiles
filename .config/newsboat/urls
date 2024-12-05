@@ -1,13 +1,16 @@
 #rss feeds
 
-#my stuff
-
-#people
-https://lukesmith.xyz/rss.xml People "~Luke Smith's site"
+"== People =="
+https://lukesmith.xyz/rss.xml People "~Luke Smith"
 
 #Videos
-https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt "~Luke @ LBRY" Videos Tech
+"== Videos =="
+https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt "~Luke's vids" Videos Tech
 https://odysee.com/$/rss/@DistroTube:2 Tech Videos "~DT"
 https://odysee.com/$/rss/@AlphaNerd:8 "~Mental Outlaw" Videos Tech
 https://odysee.com/$/rss/@switchedtolinux:0 "~Switched to Linux" Videos Tech
+https://odysee.com/$/rss/@bugswriter:8 "~Bugswriter" Videos Tech
+
+"== Podcasts =="
 https://notrelated.xyz/rss "~Not related!" Podcasts
+
