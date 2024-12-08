@@ -1,7 +1,8 @@
 #rss feeds
 
-"== People =="
-https://lukesmith.xyz/rss.xml People "~Luke Smith"
+"== Blogs =="
+https://lukesmith.xyz/rss.xml "~Luke Smith" Blogs
+https://www.cozynet.org/feed/feed.xml "~Cozynet" Blogs
 
 #Videos
 "== Videos =="

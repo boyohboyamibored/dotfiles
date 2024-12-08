@@ -5,6 +5,7 @@ if [ $# -eq 1 ]; then
 else
     # Choosing random wallpaper if one not passed
     wallpaper=$(find $HOME/Pics/wallpapers -type f -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" | shuf -n 1)
+    # dunstify $wallpaper # for troubleshooting
     waypaper --wallpaper $wallpaper >/dev/null 
     wal -i $wallpaper >/dev/null 
     exit 0
