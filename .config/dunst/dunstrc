@@ -1,8 +1,20 @@
-# frappe
 [global]
+font = "JetBrainsMono Nerd Font 12"
+monitor = 0
+offset = 10x20
+timeout = 5
+separator_height = 3
+padding = 4
+corner_radius = 7
+ignore_newline = no
+# Don't timeout notification is user is idle for this amount of time, potentially useful
+idle_threshold = 0
+allow_markup = yes
+format = "<b>%s</b>\n%b"
+
+# catppuccin frappe color scheme
+separator_color = frame
 frame_color = "#8caaee"
-separator_color= frame
-timeout = 7
 
 [urgency_low]
 background = "#303446"
@@ -13,7 +25,8 @@ background = "#303446"
 foreground = "#c6d0f5"
 
 [urgency_critical]
+timeout = 10
+
 background = "#303446"
 foreground = "#c6d0f5"
 frame_color = "#ef9f76"
-timeout = 10

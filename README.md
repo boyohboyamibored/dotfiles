@@ -18,5 +18,6 @@ The dependencies are the programs listed above (although you don't need to insta
 
 - eza
 - bat
+- hyprlock and wlogout (take a guess)
 - python-pyprland for scratchpads
-- waypaper (with swaybg or wayland backend of choice) for wallpapers
+- swaybg for setting wallpapers

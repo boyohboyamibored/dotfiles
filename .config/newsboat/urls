@@ -3,11 +3,13 @@
 "== Blogs =="
 https://lukesmith.xyz/rss.xml "~Luke Smith" Blogs
 https://www.cozynet.org/feed/feed.xml "~Cozynet" Blogs
+https://ericmurphy.xyz/index.xml "~Eric Murpy" Blogs
 
 #Videos
 "== Videos =="
 https://videos.lukesmith.xyz/feeds/videos.xml?sort=-publishedAt "~Luke's vids" Videos Tech
-https://odysee.com/$/rss/@DistroTube:2 Tech Videos "~DT"
+https://odysee.com/$/rss/@ericnmurphy:9 "~Eric Murphy" Videos Tech
+https://odysee.com/$/rss/@DistroTube:2 "~DT" Tech Videos
 https://odysee.com/$/rss/@AlphaNerd:8 "~Mental Outlaw" Videos Tech
 https://odysee.com/$/rss/@switchedtolinux:0 "~Switched to Linux" Videos Tech
 https://odysee.com/$/rss/@bugswriter:8 "~Bugswriter" Videos Tech

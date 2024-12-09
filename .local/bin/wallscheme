@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [ $# -eq 1 ]; then
-    [ -e $1 ] && waypaper --wallpaper $1 >/dev/null && wal -i $1 >/dev/null && echo "Setting wallpaper..." && echo "Generating colorshemce..." && exit 0 || dunstify "That wallpaper doesn't exist" exit 1
+    [ -e $1 ] && swaybg -m fill -i $1 && wal -i $1 >/dev/null && echo "Setting wallpaper..." && echo "Generating colorscheme..." && exit 0 || dunstify "Wallscheme" "That wallpaper doesn't exist" exit 1
 else
     # Choosing random wallpaper if one not passed
     wallpaper=$(find $HOME/Pics/wallpapers -type f -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" | shuf -n 1)
     # dunstify $wallpaper # for troubleshooting
-    waypaper --wallpaper $wallpaper >/dev/null 
+    swaybg -m fill -i "$wallpaper" & >/dev/null
     wal -i $wallpaper >/dev/null 
     exit 0
 fi
