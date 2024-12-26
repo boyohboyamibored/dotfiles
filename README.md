@@ -9,8 +9,15 @@ These are my dotfiles for the following programs. My current distro is [Artix Li
 - yazi (file manager)
 - mpd & ncmcpp (music)
 - mpv (video)
-- newsboat (rss)
+- newsboat (RSS reader)
 - tmux
+
+## Setup
+
+> [!CAUTION]
+> Do not do this in a graphical environment running Hyprland, log into a TTY by pressing `Ctrl+Alt+F2` or another Function key. This is because Hyprland will automatically create a `$HOME/.config/hypr/hyprland.conf` file if the file moves when the display server is running.
+> Back up your configs if you have any
+> `mv .config .config.bak` > `git clone https://github.com/boyohboyamibored/dotfiles.git `
 
 ## Dependencies
 

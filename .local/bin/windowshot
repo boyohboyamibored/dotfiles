@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+# script to take screenshot of active window
+
+date="$(date "+%H:%M_%d-%b-%Y")"  # 17:48@11-Dec-2024
+dir="$HOME/Pics/screenshots"
+file="${dir}/${date}.png"
+window="$(hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"')"
+
+if [ ! $1 ]; then
+    # start, step, stop
+    for sec in $(seq 5 -1 1); do
+        notify-send -h string:x-canonical-private-synchronous:shot-notify -t 1000 "Taking shot in : $sec"
+        sleep 1
+    done
+
+    sleep 1
+    grim -g "$window" "$file"
+
+    dunstify "Screenshot taken"
+fi

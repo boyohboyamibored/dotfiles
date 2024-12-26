@@ -10,8 +10,10 @@ alias pacrmorpans="sudo pacman -Rc $(pacman -Qtdq)"
 alias pacsync="sudo pacman -Syy"
 alias pacupg="sudo pacman -Syu"
 alias pacins="sudo pacman -S"
+alias pacsearch="pacman -Ss"
 
 # Command aliases
+alias mkd="mkdir -pv"
 alias cat="bat"
 alias mv="mv -iv"
 alias cp="cp -vr"
@@ -42,7 +44,8 @@ alias tk="tmux kill-session -t"
 alias tl="tmux ls"
 
 alias ytd="yt-dlp -c" #continue from where download stopped
-alias yz="yazi"
+alias yy="yazi"
+alias nf="neofetch"
 alias v=$EDITOR
 alias ncmp="ncmpcpp -q"
 alias clamscan="clamscan -ir"

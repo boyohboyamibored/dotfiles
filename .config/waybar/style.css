@@ -1,96 +1,103 @@
-@import 'themes/mocha.css';
+@import "themes/mocha.css";
 
 /* vars */
-@define-color bg rgba(0, 0, 0, 0.2);
+@define-color bg rgba(0, 0, 0, 0.5);
 @define-color active rgba(255, 120, 0, 1.0);
 @define-color used rgba(188, 200, 244, 1.0);
 /* @define-color text rgba(255, 255, 255, 1.0); */
 @define-color warning #f3f809;
 
 * {
-    border: none;
-    background: transparent;
-    border-radius: 10px;
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
-    font-size: 16px;
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
 }
 
 window#waybar {
-    background: @surface0;
-    color: @text;
+  background: @bg;
+  color: @text;
 }
 
 #window {
-    color: @yellow;
+  color: @yellow;
 }
 
 #workspaces button {
-    /* active (not empty) workspace */
-    color: @teal;
-    padding: 0 0.5em;
-    border-top: 2px solid transparent;
+  /* active (not empty) workspace */
+  color: @teal;
+  padding: 0 0.5em;
+  border-top: 2px solid transparent;
 }
 
 #workspaces button.empty {
-    color: @text;
+  color: @text;
 }
 
 #workspaces button.active {
-    /* current workspace */
-    color: @peach;
+  /* current workspace */
+  color: @peach;
 }
 
-#cpu, #memory, #mpd, #temparature, #battery, #backlight, #pulseaudio,
+#cpu,
+#memory,
+#mpd,
+#temparature,
+#battery,
+#backlight,
+#pulseaudio,
 #clock {
-    padding: 1px 1px;
+  padding: 1px 1px;
 }
 
 #mpd {
-    color: @red;
+  color: @red;
 }
 
 #clock {
-    color: @mauve;
+  color: @mauve;
 }
 
 #pulseaudio {
-    color: @lavender;
+  color: @lavender;
 }
 
 #backlight {
-    color: yellow;
+  color: yellow;
 }
 
-#cpu, #memory, #temperature {
-    color: @sky;
+#cpu,
+#memory,
+#temperature {
+  color: @sky;
 }
 
 #battery {
-    color: #83ef5f;
+  color: #83ef5f;
 }
 
 #battery.warning:not(.charging) {
-    color: @warning;
-    animation-name: blink;
-    animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  color: @warning;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #battery.critical:not(.charging) {
-    color: #ff6c6b;
-    animation-name: blink;
-    animation-duration: 0.5s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  color: #ff6c6b;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
- 
 @keyframes blink {
-	to {
-	color: #000000;
-	   }
+  to {
+    color: #000000;
+  }
 }

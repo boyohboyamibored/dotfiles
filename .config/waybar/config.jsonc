@@ -9,10 +9,7 @@
   "margin-top": 5,
   "margin-right": 8,
   "margin-left": 8,
-  "modules-left": [
-    "mpd",
-    "hyprland/workspaces"
-  ],
+  "modules-left": ["hyprland/workspaces", "mpd"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "group/sys_drawer",
@@ -24,6 +21,6 @@
     "custom/separator#line",
     "battery",
     "network",
-    "custom/separator#blank"
-  ]
+    "custom/separator#blank",
+  ],
 }
