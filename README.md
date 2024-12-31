@@ -25,7 +25,7 @@ The required dependencies are
 On Arch-based distros
 
 ```bash
-sudo pacman -S stow mpd ncmcpp mpv newsboat tmux hyrpland waybar mpv yazi eza bat hyprlock wlogout swaybg rofi
+sudo pacman -S stow mpd ncmcpp mpv newsboat tmux hyrpland waybar mpv yazi eza bat hyprlock wlogout swaybg rofi zsh-syntax-highlighting zsh-autosuggestions zsh-completions
 ```
 
 AUR packages
