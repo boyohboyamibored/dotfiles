@@ -23,18 +23,25 @@ The required dependencies are
 - swaybg for setting wallpapers
 
 On Arch-based distros
-`sudo pacman -S stow mpd ncmcpp mpv newsboat tmux hyrpland waybar mpv yazi eza bat hyprlock wlogout swaybg`
+
+```bash
+sudo pacman -S stow mpd ncmcpp mpv newsboat tmux hyrpland waybar mpv yazi eza bat hyprlock wlogout swaybg rofi
+```
 
 AUR packages
-`yay -S python-pyrpland`
+
+```bash
+yay -S python-pyrpland
+```
 
 ## Install
 
 > [!warning]
-> Do not do this in a graphical environment running Hyprland, exit the Hyprland session first. This is because Hyprland will automatically create a `$HOME/.config/hypr/hyprland.conf` file if the file moves when the display server is running.  
+> Do not do this in a graphical environment running Hyprland, exit the Hyprland session first. This is because Hyprland will automatically create a `$HOME/.config/hypr/hyprland.conf` file if the file moves when the display server is running.
 > Back up your configs if you have any
 
 ```bash
+cd
 mv .config{,.bak}
 git clone https://github.com/boyohboyamibored/dotfiles.git .dotfiles
 cd .dotfiles
