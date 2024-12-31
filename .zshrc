@@ -33,9 +33,9 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 # aliasrc
 source $HOME/.config/zsh/aliasrc
-# optionsrc
 source $HOME/.config/zsh/optionsrc
 source $HOME/.config/zsh/.zshenv
+source $HOME/.config/zsh/.zprofile
 
 # plugins
 
