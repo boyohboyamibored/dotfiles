@@ -49,13 +49,14 @@
   },
 
   "mpd": {
-    "format": "{stateIcon} {title} - {artist}",
+    "format": "󰎆 ",
+    "format-alt": "{stateIcon} {title} - {artist}",
     //"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
     "format-disconnected": "Disconnected ",
-    "format-stopped": "",
+    "format-stopped": "󰝛 ",
     //"format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon} ",
     "interval": 10,
-    "max-length": 30,
+    "max-length": 40,
     "consume-icons": {
       "on": " ", // Icon shows only when "consume" is on
     },
@@ -69,8 +70,8 @@
       "on": "1 ",
     },
     "state-icons": {
-      "paused": " ",
-      "playing": " ",
+      "paused": "",
+      "playing": "",
     },
     "tooltip-format": "MPD (connected)",
     "tooltip-format-disconnected": "MPD (disconnected)",

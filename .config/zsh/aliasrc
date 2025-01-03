@@ -42,6 +42,7 @@ alias tn="tmux new -s"
 alias ta="tmux attach"
 alias tk="tmux kill-session -t"
 alias tl="tmux ls"
+alias tf="tmuxfzf"
 
 alias ytd="yt-dlp -c" #continue from where download stopped
 alias yy="yazi"

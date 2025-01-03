@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# script to fzf tmux sessions
+
+session="$(tmux ls | fzf | cut -d':' -f1)"
+# check if in a tmux session
+in="$(tmux ls | cut -d'(' -f 3 | cut -d')' -f 1)"
+
+# if length is not zero
+if [ ! -z $in ]; then
+    [ ! -z $session ] && tmux switchc -t $session
+else
+    [ ! -z $session ] && tmux attach -t $session
+fi

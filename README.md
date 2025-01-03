@@ -25,7 +25,7 @@ The required dependencies are
 On Arch-based distros
 
 ```bash
-sudo pacman -S stow mpd ncmcpp mpv newsboat tmux hyrpland waybar mpv yazi eza bat hyprlock wlogout swaybg rofi zsh-syntax-highlighting zsh-autosuggestions zsh-completions
+sudo pacman -S stow mpd ncmcpp mpv newsboat tmux hyrpland waybar mpv yazi eza bat hyprlock wlogout swaybg rofi zsh-syntax-highlighting zsh-autosuggestions zsh-completions playerctl wl-clipboard ttf-jetbrains-mono-nerd python-pywal
 ```
 
 AUR packages
@@ -37,8 +37,9 @@ yay -S python-pyrpland
 ## Install
 
 > [!warning]
-> Do not do this in a graphical environment running Hyprland, exit the Hyprland session first. This is because Hyprland will automatically create a `$HOME/.config/hypr/hyprland.conf` file if the file moves when the display server is running.
-> Back up your configs if you have any
+> Do not do this if there is a Hyprland session, exit the Hyprland session first. This is because Hyprland will automatically create a `$HOME/.config/hypr/hyprland.conf` file if the file doesn't exist when a Hyprland session is running.
+>
+> Back up your configs if you have any.
 
 ```bash
 cd

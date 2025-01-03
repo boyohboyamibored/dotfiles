@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# ip address
+ip=$(curl -s "https://bash.ws/dnsleak" | grep -E "my-ip.*.<" | head -n 1 | head -n 2 | cut -d'>' -f 5 | cut -d'<' -f 1) || exit 1
+# country you appear to be from
+location=$(curl -s "https://bash.ws/geoiplookup/${ip}?embed=txt" | cut -d'|' -f 2)
+isp=$(curl --silent "https://bash.ws/geoiplookup/${ip}?embed=txt" | cut -d'|' -f 3)
+
+dunstify "myip" "IP: ${ip}\nCountry: ${location}\nISP: ${isp}" && exit 0
